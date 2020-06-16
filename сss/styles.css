@@ -1,0 +1,400 @@
+/* цвет основной текста #212121 */
+/* вторичный цвет текста #757575 */
+/* вторичный цвет фона #AFB1B8 */
+
+/* белый #FFFFFF */
+/* акцент #2196F3 */
+
+:root {
+  --primary-text-color: #757575;
+  --primary-white-color: #ffffff;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+/* Утиилиты */
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+img {
+  display: block;
+}
+
+/*Header*/
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(223, 213, 231);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Nav-address */
+
+.nav-address {
+  display: flex;
+  align-items: center;
+}
+
+.logo-header {
+  color: black;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.logo-web {
+  color: var(--accent-color);
+}
+
+/*Page header*/
+
+.page-header {
+}
+
+/*Address list*/
+
+.address .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-style: inherit;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.address .item + .item {
+  margin-left: 30px;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* Site nav */
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 85px;
+}
+
+.site-nav .item + .item {
+  margin-left: 52px;
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--title-text-color);
+
+  font-weight: 500;
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.address .link:hover,
+.address .link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero {
+  text-align: center;
+}
+
+.hero-title {
+  margin-bottom: 30px;
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+  font-size: 44px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  font-weight: 900;
+  background-color: #9bcaf1;
+}
+
+/* buttons */
+.button-order {
+  margin-left: 700px;
+  margin-right: 700px;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  color: var(--primary-white-color);
+  background: var(--accent-color);
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 700;
+}
+
+.button-subscribe {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 62px 10px 29px;
+  margin-left: auto;
+
+  color: var(--primary-white-color);
+  background: var(--accent-color);
+  letter-spacing: 0.06em;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* Section */
+
+.section-title {
+  padding-bottom: 59px;
+  color: var(--title-text-color);
+  text-align: center;
+  font-size: 36px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-without-padding-bottom {
+  padding-top: 94px;
+  padding-bottom: 0px;
+}
+
+/* Features */
+
+.feature-list {
+  margin-top: 94 px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.feature-list .item + .item {
+  margin-left: 29px;
+}
+
+.feature-list .title {
+  color: var(--title-text-color);
+  text-transform: uppercase;
+}
+
+.feature-list p {
+  margin-bottom: 0px;
+  line-height: 1.7;
+}
+
+/* what we do */
+
+.what-we-do .title {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.what-we-do {
+  padding-left: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.what-we-do .item + .item {
+  margin-left: 29px;
+}
+
+/* Team */
+.team-list .title {
+  color: var(--title-text-color);
+  text-align: center;
+  font-size: 16px;
+}
+
+.team-list {
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+}
+
+.team-list .item + .item {
+  margin-left: 30px;
+}
+
+.profession {
+  text-align: center;
+  font-size: 16px;
+}
+
+/*Clients-list*/
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+}
+
+.clients-list .item + .item {
+  margin-left: 30px;
+}
+
+/* Works-list for portfolio */
+
+.main-section {
+  padding-top: 93px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.filters .item + .item {
+  margin-left: 8px;
+}
+
+.works-list {
+  padding-top: 50px;
+  padding-bottom: 94px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+}
+
+.flex-element {
+  width: 370px;
+  margin-right: 30px;
+}
+
+.flex-element.flex-element:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.works-list .title {
+  color: var(--title-text-color);
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  line-height: 2;
+}
+
+.works-list .product {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.works-description {
+  color: var(--primary-white-color);
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: #2196f3;
+}
+
+/* Footer */
+
+.address-phone-join {
+  display: flex;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+.footer {
+  background-color: #2f303a;
+}
+
+.logo-footer {
+  color: var(--primary-white-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.address-footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: inherit;
+  line-height: 1.7;
+}
+
+.physical-address {
+  color: var(--primary-white-color);
+}
+
+.join {
+  padding-left: 69px;
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+}
+
+.subscribe {
+  padding-left: 94px;
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+}
+
+.copywrite {
+  padding-top: 18px;
+  padding-bottom: 21px;
+  font-size: 12px;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
