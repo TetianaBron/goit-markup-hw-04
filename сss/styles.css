@@ -186,10 +186,24 @@ img {
 }
 
 button {
+  border: none;
+  outline: none;
+  padding: 6px 23px;
+  background-color: F5F4FA;
   font-family: inherit;
   font-size: 16px;
   line-height: 1.6;
   font-weight: 500;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+button:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
 
 /* Section */
@@ -225,7 +239,7 @@ button {
   margin-left: 29px;
 }
 
-.feature-list .title {
+.fpxeature-list .title {
   color: var(--title-text-color);
   text-transform: uppercase;
 }
