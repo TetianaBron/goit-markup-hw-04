@@ -23,6 +23,17 @@ body {
 
 /* Утиилиты */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .list {
   padding: 0;
   margin: 0;
@@ -31,6 +42,12 @@ body {
 
 ul {
   list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -53,7 +70,7 @@ img {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(223, 213, 231);
+  outline: solid 2px red;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -79,6 +96,7 @@ img {
 /*Page header*/
 
 .page-header {
+  border-bottom: solid 1px #f5f4fa;
 }
 
 /*Address list*/
@@ -141,7 +159,16 @@ img {
 /* Hero */
 
 .hero {
-  text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url("../Images/Header\ img.jpg");
 }
 
 .hero-title {
@@ -156,6 +183,7 @@ img {
 }
 
 /* buttons */
+
 .button-order {
   margin-left: 700px;
   margin-right: 700px;
@@ -189,7 +217,7 @@ button {
   border: none;
   outline: none;
   padding: 6px 23px;
-  background-color: F5F4FA;
+  background-color: #f5f4fa;
   font-family: inherit;
   font-size: 16px;
   line-height: 1.6;
@@ -235,18 +263,63 @@ button:focus {
   align-items: center;
 }
 
-.feature-list .item + .item {
-  margin-left: 29px;
+/*svg in feature-list*/
+
+.antenna {
+  display: inline-block;
+  width: 270px;
+  height: 120px;
+  background-image: url("../Images/antenna_1.svg");
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.fpxeature-list .title {
+.clock {
+  display: inline-block;
+  width: 270px;
+  height: 120px;
+  background-image: url("../Images/clock_1.svg");
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.diagram {
+  display: inline-block;
+  width: 270px;
+  height: 120px;
+  background-image: url("../Images/diagram_1.svg");
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.astronaut {
+  display: inline-block;
+  width: 270px;
+  height: 120px;
+  background-image: url("../Images/astronaut_1.svg");
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feature-list .item + .item {
+  margin-left: 30px;
+}
+
+.feature-list .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   text-transform: uppercase;
 }
 
 .feature-list p {
+  min-width: 270px;
   margin-bottom: 0px;
-  line-height: 1.7;
+  line-height: 1.71;
 }
 
 /* what we do */
@@ -273,6 +346,11 @@ button:focus {
 }
 
 /* Team */
+
+.team-background {
+  background-color: #e5e5e5;
+}
+
 .team-list .title {
   color: var(--title-text-color);
   text-align: center;
@@ -287,6 +365,11 @@ button:focus {
 
 .team-list .item + .item {
   margin-left: 30px;
+}
+
+.team-list .item {
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .profession {
@@ -337,6 +420,7 @@ button:focus {
 .flex-element {
   width: 370px;
   margin-right: 30px;
+  border: 1px solid #eeeeee;
 }
 
 .flex-element.flex-element:nth-child(3n) {
@@ -367,8 +451,8 @@ button:focus {
 .address-phone-join {
   display: flex;
   align-items: center;
-  padding-top: 55px;
-  padding-bottom: 55px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer {
   background-color: #2f303a;
@@ -402,13 +486,4 @@ button:focus {
   padding-left: 94px;
   color: var(--primary-white-color);
   text-transform: uppercase;
-}
-
-.copywrite {
-  padding-top: 18px;
-  padding-bottom: 21px;
-  font-size: 12px;
-  line-height: 2;
-  color: rgba(255, 255, 255, 0.4);
-  text-align: center;
 }
