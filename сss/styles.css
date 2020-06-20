@@ -10,6 +10,7 @@
   --primary-white-color: #ffffff;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --accent-grey: #f5f4fa;
 }
 
 body {
@@ -96,7 +97,7 @@ img {
 /*Page header*/
 
 .page-header {
-  border-bottom: solid 1px #f5f4fa;
+  border-bottom: solid 1px var(--accent-grey);
 }
 
 /*Address list*/
@@ -217,7 +218,7 @@ button {
   border: none;
   outline: none;
   padding: 6px 23px;
-  background-color: #f5f4fa;
+  background-color: var(--accent-grey);
   font-family: inherit;
   font-size: 16px;
   line-height: 1.6;
@@ -263,48 +264,6 @@ button:focus {
   align-items: center;
 }
 
-/*svg in feature-list*/
-
-.antenna {
-  display: inline-block;
-  width: 270px;
-  height: 120px;
-  background-image: url("../Images/antenna_1.svg");
-  background-color: #f5f4fa;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.clock {
-  display: inline-block;
-  width: 270px;
-  height: 120px;
-  background-image: url("../Images/clock_1.svg");
-  background-color: #f5f4fa;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.diagram {
-  display: inline-block;
-  width: 270px;
-  height: 120px;
-  background-image: url("../Images/diagram_1.svg");
-  background-color: #f5f4fa;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.astronaut {
-  display: inline-block;
-  width: 270px;
-  height: 120px;
-  background-image: url("../Images/astronaut_1.svg");
-  background-color: #f5f4fa;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .feature-list .item + .item {
   margin-left: 30px;
 }
@@ -317,9 +276,27 @@ button:focus {
 }
 
 .feature-list p {
-  min-width: 270px;
   margin-bottom: 0px;
-  line-height: 1.71;
+  line-height: 1.7;
+  width: 270px;
+}
+
+/*svg in feature-list*/
+
+.feature-icon {
+  width: 70px;
+  height: 70px;
+  background-color: var(--accent-grey);
+}
+
+.background-icon {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 270px;
+  height: 120px;
+  background-color: var(--accent-grey);
 }
 
 /* what we do */
@@ -454,6 +431,7 @@ button:focus {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer {
   background-color: #2f303a;
 }
