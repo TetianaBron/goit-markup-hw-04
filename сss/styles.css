@@ -153,12 +153,12 @@ img {
   color: var(--accent-color);
 }
 
-.icon-envelope {
+.icon-header {
   fill: var(--primary-text-color);
   margin-right: 10px;
 }
 
-.icon-envelope:hover {
+.icon-header:hover {
   fill: var(--accent-color);
 }
 
