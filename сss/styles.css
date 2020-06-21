@@ -106,7 +106,6 @@ img {
 .address .link {
   padding-top: 32px;
   padding-bottom: 32px;
-
   font-style: inherit;
   letter-spacing: 0.02em;
   font-weight: 500;
@@ -209,25 +208,6 @@ img {
   font-size: 16px;
   line-height: 1.8;
   font-weight: 700;
-}
-
-.button-subscribe {
-  display: inline-block;
-  border-radius: 4px;
-  padding: 10px 62px 10px 29px;
-  margin-left: auto;
-
-  color: var(--primary-white-color);
-  background: var(--accent-color);
-  letter-spacing: 0.06em;
-  font-size: 16px;
-  line-height: 1.8;
-}
-
-.icon-send {
-  width: 24px;
-  height: 24px;
-  background-size: contain;
 }
 
 button {
@@ -556,9 +536,19 @@ button:focus {
   text-transform: uppercase;
 }
 
-.icon-send {
-  fill: ;
+.button-subscribe {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 62px 10px 29px;
+  margin-left: auto;
+
+  color: var(--primary-white-color);
+  background: var(--accent-color);
+  letter-spacing: 0.06em;
+  font-size: 16px;
+  line-height: 1.8;
 }
+
 .subscribe {
   padding-left: 94px;
   color: var(--primary-white-color);
