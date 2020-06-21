@@ -153,6 +153,17 @@ img {
   color: var(--accent-color);
 }
 
+.icon-envelope {
+  width: 16px;
+  height: 11px;
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+}
+
+.icon-envelope:hover {
+  fill: var(--accent-color);
+}
+
 .address .link:hover,
 .address .link:focus {
   color: var(--accent-color);
@@ -351,13 +362,13 @@ button:focus {
   margin-left: 30px;
 }
 
-.team-list .item {
+.team-list > .item {
+  background-color: var(--primary-white-color);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .social-network-list {
-  box-shadow: none;
   display: flex;
   padding-left: 0px;
   justify-content: center;
@@ -371,9 +382,9 @@ button:focus {
 }
 
 .background-social-network {
+  fill: var(--secondary-color);
   width: 44px;
   height: 44px;
-  box-shadow: none;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -383,18 +394,11 @@ button:focus {
 }
 
 .background-social-network:hover {
+  fill: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
 /*Svg for team-list*/
-
-.team-icon {
-  fill: var(--secondary-color);
-}
-
-.team-icon:hover {
-  fill: var(--primary-white-color);
-}
 
 .profession {
   text-align: center;
@@ -643,6 +647,9 @@ button:focus {
   text-transform: uppercase;
 }
 
+.icon-send {
+  fill: ;
+}
 .subscribe {
   padding-left: 94px;
   color: var(--primary-white-color);
