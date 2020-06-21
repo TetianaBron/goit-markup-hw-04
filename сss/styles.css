@@ -154,8 +154,6 @@ img {
 }
 
 .icon-envelope {
-  width: 16px;
-  height: 11px;
   fill: var(--primary-text-color);
   margin-right: 10px;
 }
@@ -336,7 +334,7 @@ button:focus {
 }
 
 .what-we-do .item + .item {
-  margin-left: 29px;
+  margin-left: 30px;
 }
 
 /* Team */
@@ -419,15 +417,6 @@ button:focus {
 .clients-list .item + .item {
   margin-left: 30px;
 }
-/*
-.clients-list .item {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  outline: solid 1px var(--accent-grey);
-  width: 170px;
-  height: 90px;
-}*/
 
 .clients-logos {
   display: flex;
@@ -444,101 +433,6 @@ button:focus {
   fill: var(--accent-color);
   border: solid 1px var(--accent-color);
 }
-
-/*
-.icon-logo-1:hover {
-  fill: var(--accent-color);
-}
-
-.icon-logo-2:hover {
-  fill: var(--accent-color);
-}
-
-.icon-logo-3:hover {
-  fill: var(--accent-color);
-}
-
-.icon-logo-4:hover {
-  fill: var(--accent-color);
-}
-
-.icon-logo-5:hover {
-  fill: var(--accent-color);
-}
-
-.icon-logo-6:hover {
-  fill: var(--accent-color);
-}
-
-.icon-logo-1:focus {
-  fill: var(--accent-color);
-}
-
-.icon-logo-2:focus {
-  fill: var(--accent-color);
-}
-
-.icon-logo-3:focus {
-  fill: var(--accent-color);
-}
-
-.icon-logo-4:focus {
-  fill: var(--accent-color);
-}
-
-.icon-logo-5:focus {
-  fill: var(--accent-color);
-}
-
-.icon-logo-6:focus {
-  fill: var(--accent-color);
-}
-
-.clients-list .item:hover {
-  outline: solid 1px var(--accent-color);
-}
-
-.clients-list .item:focus {
-  outline: solid 1px var(--accent-color);
-}*/
-
-/*Svg for clients-list */
-/*
-.icon-logo-1 {
-  width: 45px;
-  height: 50px;
-  fill: var(--secondary-color);
-}
-
-.icon-logo-2 {
-  width: 40px;
-  height: 52px;
-  fill: var(--secondary-color);
-}
-
-.icon-logo-3 {
-  width: 41px;
-  height: 53px;
-  fill: var(--secondary-color);
-}
-
-.icon-logo-4 {
-  width: 80px;
-  height: 42px;
-  fill: var(--secondary-color);
-}
-
-.icon-logo-5 {
-  width: 59px;
-  height: 47px;
-  fill: var(--secondary-color);
-}
-
-.icon-logo-6 {
-  width: 89px;
-  height: 45px;
-  fill: var(--secondary-color);
-}*/
 
 /* Works-list for portfolio */
 
@@ -642,17 +536,14 @@ button:focus {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
+  fill: var(--primary-white-color);
   background-color: #44454e;
   border-radius: 50%;
 }
 
-.background-social-network-footer:hover {
+.background-social-network-footer:hover,
+.background-social-network-footer:focus {
   background-color: var(--accent-color);
-}
-
-.social-network-footer-icon {
-  fill: var(--primary-white-color);
 }
 
 .physical-address {
