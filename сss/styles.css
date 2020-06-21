@@ -393,7 +393,8 @@ button:focus {
   border-radius: 50%;
 }
 
-.background-social-network:hover {
+.background-social-network:hover,
+.background-social-network:focus {
   fill: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -418,7 +419,7 @@ button:focus {
 .clients-list .item + .item {
   margin-left: 30px;
 }
-
+/*
 .clients-list .item {
   display: inline-flex;
   justify-content: center;
@@ -426,8 +427,25 @@ button:focus {
   outline: solid 1px var(--accent-grey);
   width: 170px;
   height: 90px;
+}*/
+
+.clients-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px var(--accent-grey);
+  width: 170px;
+  height: 90px;
+  fill: var(--secondary-color);
 }
 
+.clients-logos:hover,
+.clients-logos:focus {
+  fill: var(--accent-color);
+  border: solid 1px var(--accent-color);
+}
+
+/*
 .icon-logo-1:hover {
   fill: var(--accent-color);
 }
@@ -482,10 +500,10 @@ button:focus {
 
 .clients-list .item:focus {
   outline: solid 1px var(--accent-color);
-}
+}*/
 
 /*Svg for clients-list */
-
+/*
 .icon-logo-1 {
   width: 45px;
   height: 50px;
@@ -520,7 +538,7 @@ button:focus {
   width: 89px;
   height: 45px;
   fill: var(--secondary-color);
-}
+}*/
 
 /* Works-list for portfolio */
 
