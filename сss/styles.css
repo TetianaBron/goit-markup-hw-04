@@ -173,6 +173,7 @@ img {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 200px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.8),
@@ -189,7 +190,6 @@ img {
   letter-spacing: 0.06em;
   text-align: center;
   font-weight: 900;
-  background-color: #9bcaf1;
 }
 
 /* buttons */
