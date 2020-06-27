@@ -259,6 +259,7 @@ button:focus {
   padding-left: 0px;
   display: flex;
   align-items: center;
+  list-style: none;
 }
 
 .feature-list .item + .item {
@@ -369,8 +370,6 @@ button:focus {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
-  color: var(--secondary-color);
   border-radius: 50%;
 }
 
@@ -541,16 +540,26 @@ button:focus {
 }
 
 .button-subscribe {
-  display: inline-block;
+  display: inline-flex;
   border-radius: 4px;
-  padding: 10px 62px 10px 29px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 28px;
   margin-left: auto;
+  align-self: center;
+  justify-content: center;
 
   color: var(--primary-white-color);
   background: var(--accent-color);
   letter-spacing: 0.06em;
+  font-weight: bold;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.87;
+}
+
+.icon-send {
+  margin-left: 10px;
 }
 
 .subscribe {
